@@ -49,4 +49,4 @@
     </div>
 </section><!-- End berita Section -->
 
-<?php include_once './footer.php'; ?>
+

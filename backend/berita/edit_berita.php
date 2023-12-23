@@ -1,6 +1,10 @@
 <?php
 include("../koneksi.php");
-$id = $_GET['id'];
+$id = isset($_GET['id']) ? $_GET['id'] : null;
+if ($id === null) {
+    echo "ID tidak ditemukan!";
+    exit(); // Memberhentikan eksekusi jika ID tidak ada
+}
 $data = $koneksi->query("SELECT * FROM `berita` WHERE `id`='$id'")->fetch_assoc();
 ?>
 <div class="card">

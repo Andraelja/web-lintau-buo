@@ -1,5 +1,9 @@
 <?php include_once './navbar.php'; ?>
 <style>
+    .services{
+        margin-top: 100px;
+    }
+
     .icon-box {
         margin-bottom: 20px;
     }
@@ -49,4 +53,4 @@
     </div>
 </section><!-- End berita Section -->
 
-
+<?php include_once './footer.php'; ?>

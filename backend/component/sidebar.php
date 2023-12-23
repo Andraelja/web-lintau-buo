@@ -40,9 +40,9 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="?page=kegiatan/kegiatan" class="nav-link">
+            <a href="?page=penduduk/penduduk" class="nav-link">
               <i class="fas fa-bookmark nav-icon"></i>
-              <p>Data Kegiatan</p>
+              <p>Data Penduduk</p>
             </a>
           </li>
           <li class="nav-item">

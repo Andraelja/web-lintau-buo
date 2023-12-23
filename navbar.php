@@ -35,7 +35,7 @@
 
   <!-- ======= Header ======= -->
 
-  <header id="header" class="fixed-top ">
+  <header id="header" class="fixed-top bg-dark">
     <div class="container d-flex align-items-center justify-content-lg-between">
 
       <h1 class="logo me-auto me-lg-0"><a href="index.html"><img src="assets/img/download-removebg-preview (1).png"
@@ -51,6 +51,7 @@
               <li><a href="struktur.php">Struktur</a></li>
               <li><a href="visimisi.php">Visi dan Misi</a></li>
               <li><a href="tentang.php">Tentang Lintau Buo</a></li>
+              <li><a href="galeri.php">Galeri Lintau Buo</a></li>
             </ul>
           </li>
           <li class="dropdown"><a href="#services"><span>Berita</span> <i class="bi bi-chevron-down"></i></a>
@@ -59,7 +60,6 @@
               <li><a href="pengumuman.php">Pengumuman</a></li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto " href="#portfolio">Galeri</a></li>
           <li class="dropdown"><a href="#"><span>Layanan</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="ektp.php">Pelayanan E-KTP</a></li>
@@ -75,14 +75,7 @@
               <li><a href="izinkeramaian.php">Surat Izin Keramaian</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a href="#"><span>Nagari</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="taluak.php">Taluak</a></li>
-              <li><a href="tigo.php">Tigo Jangko</a></li>
-              <li><a href="pangian.php">Pangian</a></li>
-              <li><a href="buo.php">Buo</a></li>
-            </ul>
-          </li>
+          <li><a class="nav-link scrollto active" href="penduduk.php">Nagari</a></li>
           <li><a class="nav-link scrollto" href="index.php">Contact</a></li>
         </ul>
         </li>

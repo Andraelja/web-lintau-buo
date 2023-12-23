@@ -1,4 +1,6 @@
-<?php include_once './navbar.php'; ?>
+<?php
+include_once './navbar.php'
+    ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,11 +8,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-KTP</title>
+    <title>surat keterangan ahli waris</title>
     <style>
         body {
-            background-image: url(assets/img/ktp.png);
-            background-size: cover;
+            background-color: white;
             display: flex;
             justify-content: center;
             align-items: flex-start;
@@ -110,97 +111,26 @@
             flex-grow: 1;
         }
 
-        /* .card {
-            max-width: 300px;
-            width: 60%;
-            height: auto;
-            border: 1px solid #e0e0e0;
-            border-radius: 5px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-            background-color: #fff;
-            margin-top: 500px;
-            margin-left: 50px;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .card img {
-            width: 100%;
-            height: 100px;
-            object-fit: cover;
-            border-bottom: 1px solid #e0e0e0;
-        }
-
-        .card-content {
-            padding: 20px;
-        }
-
-        .card-title {
-            font-size: 1.2em;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .card-description {
-            color: #555;
-            line-height: 1.4;
-        } */
+        .icon-box {
+        text-align: center;
+        border: 1px solid #ebebeb;
+        padding: 80px 20px;
+        transition: all ease-in-out 0.3s;
+        background: #fff;
+        margin-bottom: 20px; /* Add margin to create space between cards */
+    }
     </style>
 </head>
 
 <body>
-    <div class="content">
+<div class="content">
         <div class="title">
             <h1></h1>
         </div>
-
-        <img src="./assets/img/alur_ektp.jpg" alt="">
-    </div>
-
-    <!-- <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="Placeholder Image">
-        <div class="card-content">
-            <h3 class="card-title">Pengumuman Pertama</h3>
-            <p class="card-description">
-                Deskripsi singkat dari pengumuman pertama.
-            </p>
+        <div class="icon-box">
+            <img src="assets/img/alur_ektp.jpg" alt="Icon Image">
         </div>
     </div>
-
-    <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="Placeholder Image">
-        <div class="card-content">
-            <h3 class="card-title">Pengumuman Pertama</h3>
-            <p class="card-description">
-                Deskripsi singkat dari pengumuman pertama.
-            </p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="Placeholder Image">
-        <div class="card-content">
-            <h3 class="card-title">Pengumuman Pertama</h3>
-            <p class="card-description">
-                Deskripsi singkat dari pengumuman pertama.
-            </p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="Placeholder Image">
-        <div class="card-content">
-            <h3 class="card-title">Pengumuman Pertama</h3>
-            <p class="card-description">
-                Deskripsi singkat dari pengumuman pertama.
-            </p>
-        </div>
-    </div> -->
-
     <div class="sidebar">
         <h2>Berita Terkini</h2>
 
@@ -261,7 +191,14 @@
         </div>
     </div>
     <div class="footer">
-        <?php include_once './footer.php'; ?>
+        <?php
+        include_once './pengumuman.php'
+            ?>
+    </div>
+    <div class="footer">
+        <?php
+        include_once './footer.php'
+            ?>
     </div>
 </body>
 

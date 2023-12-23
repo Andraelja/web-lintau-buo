@@ -24,7 +24,7 @@
                     <input type="text" class="form-control" name="jabatan">
                   </div>
                   <div class="form-group">
-                    <label>NIK</label>
+                    <label>NIP</label>
                     <input type="text" class="form-control" name="deskripsi">
                   </div>
                   <div class="form-group">

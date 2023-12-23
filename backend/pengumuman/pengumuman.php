@@ -27,6 +27,8 @@
               <th>Content</th>
               <th>Tanggal</th>
               <th>Comment</th>
+              <th>Link</th>
+              <th>Deskripsi</th>
               <th>Foto</th>
             </tr>
           </thead>

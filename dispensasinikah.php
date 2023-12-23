@@ -205,6 +205,11 @@ include_once './navbar.php'
     </div>
     <div class="footer">
         <?php
+        include_once './pengumuman.php'
+            ?>
+    </div>
+    <div class="footer">
+        <?php
         include_once './footer.php'
             ?>
     </div>

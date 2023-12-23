@@ -39,6 +39,8 @@ $data = $koneksi->query("SELECT * FROM `pengumuman` WHERE `id`='$id'")->fetch_as
             $content= $_POST['content'];
             $tgl= $_POST['tgl'];
             $comment= $_POST['comment'];
+            $deskripsi= $_POST['deskripsi'];
+            $link= $_POST['link'];
 
             $nama_file = $_FILES['foto']['name'];
             $ukuran_file = $_FILES['foto']['size'];
@@ -61,7 +63,7 @@ $data = $koneksi->query("SELECT * FROM `pengumuman` WHERE `id`='$id'")->fetch_as
                 // Jika foto berhasil diupload, Lakukan :
                 // Proses simpan ke Database
 
-                $sql = mysqli_query($koneksi, "UPDATE `pengumuman` SET `admin`='$admin',`judul`='$judul',`content`='$content',`tgl`='$tgl' ,``comment`='$comment' ,`foto`='$nama_file'WHERE id='$id'");
+                $sql = mysqli_query($koneksi, "UPDATE `pengumuman` SET `admin`='$admin',`judul`='$judul',`content`='$content',`tgl`='$tgl' ,`comment`='$comment' ,`deskripsi`='$deskripsi' ,`link`='$link' ,`foto`='$nama_file'WHERE id='$id'");
 
                 if($sql){ // Cek jika proses simpan ke database sukses atau tidak
                     // Jika Sukses, Lakukan :

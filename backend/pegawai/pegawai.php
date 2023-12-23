@@ -25,7 +25,7 @@
             <th>Nama</th>
             <th>Jenis Kelamin</th>
             <th>Jabatan</th>
-            <th>Deskripsi</th>
+            <th>NIP</th>
             <th>Foto</th>
             <th>Action</th>
           </tr>

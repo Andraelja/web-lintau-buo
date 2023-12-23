@@ -72,7 +72,7 @@
               <th>Nama</th>
               <th>Jenis Kelamin</th>
               <th>Jabatan</th>
-              <th>NIK</th>
+              <th>NIP</th>
               <th>Foto</th>
             </tr>
           </thead>

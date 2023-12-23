@@ -14,8 +14,6 @@ include_once './navbar.php'
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url(assets/img/bg.jpg);
-            background-size: cover;
             display: flex;
             justify-content: center;
             align-items: center;

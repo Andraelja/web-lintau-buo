@@ -6,35 +6,36 @@ $data = $koneksi->query("SELECT * FROM `pegawai` WHERE `id`='$id'")->fetch_assoc
 <div class="card">
     <div class="card-body">
         <form action="" method="POST" enctype="multipart/form-data">
-        <div class="form-group">
+            <div class="form-group">
                 <label for="">Nama</label>
                 <input type="text" name="nama_pegawai" class="form-control" value="<?php echo $data['nama_pegawai'] ?>">
             </div>
-            <div class="form-group"></div>
-                  <div><label for="jenis_kelamin">Jenis Kelamin</label>
-                  <div>
-                  <select class="form-control" id="jenis_kelamin" name="jenis_kelamin"value="{{old('jenis_kelamin')}}" id="jenis_kelamin">
-                  <option selected>-Pilih Jenis Kelamin-</option>
-                  <option value="laki-laki">Laki-Laki</option>
-                  <option value="perempuan">Perempuan</option>
+            <div class="form-group">
+                <label for="jenis_kelamin">Jenis Kelamin</label>
+                <select class="form-control" id="jenis_kelamin" name="jenis_kelamin">
+                    <option value="laki-laki" <?php if ($data['jenis_kelamin'] == 'laki-laki') echo 'selected'; ?>>Laki-Laki</option>
+                    <option value="perempuan" <?php if ($data['jenis_kelamin'] == 'perempuan') echo 'selected'; ?>>Perempuan</option>
                 </select>
-                </div>
-                </div>
+            </div>
             <div class="form-group">
                 <label for="">Jabatan</label>
                 <input type="text" name="jabatan" class="form-control" value="<?php echo $data['jabatan'] ?>">
             </div>
             <div class="form-group">
                 <label for="">Foto</label>
-                <input type="file" name="foto" class="form-control" value="<?php echo $data['foto'] ?>">
+                <input type="file" name="foto" class="form-control">
+                <!-- Hapus value dari input file karena tidak bisa menampilkan file yang diupload sebelumnya -->
             </div>
             <div class="form-group">
-                <label for="">Deskripsi</label>
+                <label for="">NIP</label>
                 <input type="text" name="deskripsi" class="form-control" value="<?php echo $data['deskripsi'] ?>">
-            </div>
             </div>
             <button class="btn btn-primary" name="edit" type="submit">Edit Data</button>
         </form>
+
+        <!-- ... -->
+    </div>
+</div>
         <?php if (isset($_POST['edit'])) {
             // $foto = $_POST['foto'];
             $nama_pegawai= $_POST['nama_pegawai'];

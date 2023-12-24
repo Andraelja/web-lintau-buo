@@ -90,7 +90,7 @@ include_once './navbar.php'
         }
 
         .footer {
-            background-color: #0056b3;
+            
             color: white;
             text-align: center;
             padding: 10px 0;
@@ -188,7 +188,9 @@ include_once './navbar.php'
         </div>
     </div>
 
-
+    <div class="footer">
+        <?php include_once './pengumuman.php'; ?>
+    </div>
     <div class="footer">
         <?php include_once './footer.php'; ?>
     </div>

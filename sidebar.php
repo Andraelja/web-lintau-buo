@@ -73,57 +73,91 @@
     }
 
     .sidebar {
-        width: 30%;
-        margin-left: 20px;
-        background-color: #f2f2f2;
-        padding: 20px;
-        margin-top: 75px;
-    }
+            width: 30%;
+            margin-left: 20px;
+            background-color: white;
+            margin-top: 100px;
+            border: 1px solid #ebebeb;
+            padding: 10px 20px;
+        }
 
-    .news-item {
-        margin-bottom: 20px;
-    }
+        .news-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 40px;
+        }
 
-    .news-image{
-        width: 80px;
-        height: auto;
-    }
+        .news-image {
+            width: 80px;
+            height: auto;
+            margin-right: 10px;
+        }
 
-    .news-item img {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        margin-bottom: 10px;
-    }
+        .news-item .news-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
 
-    .news-item h3 {
-        margin-bottom: 5px;
-    }
+        .news-item h3,
+        .news-item p {
+            margin: 0;
+            font-size: 20px;
+        }
 
-    .news-item p {
-        font-size: 14px;
-        color: #666;
+        .news-item p {
+            flex-grow: 1;
+        }
+
+        .news-image img {
+        width: 100%; /* Mengatur lebar gambar agar sesuai dengan parent */
+        height: auto; /* Mengatur tinggi agar proporsi gambar tetap terjaga */
     }
 </style>
 
 
+<!-- Sidebar -->
 <div class="sidebar">
-    <!-- Konten untuk sidebar di sebelah kanan -->
-    <div class="sidebar">
-        <h2>Berita Terkini</h2>
+    <?php include_once './navbar.php'; ?>
 
-        <div class="news-item">
-            <img src="assets/img/berita1.jpeg" alt="Berita 1" class="news-image">
-            <h3>Judul Berita 1</h3>
-            <p></p>
+    <style>
+        /* Gaya CSS untuk sidebar */
+        /* ... (Gaya CSS yang sudah Anda miliki sebelumnya) */
+    </style>
+
+    <!-- Konten services -->
+    <section id="services" class="services">
+        <div class="container" data-aos="fade-up">
+            <div class="section-title">
+                <h2>Services</h2>
+                <p>Berita Kecamatan</p>
+            </div>
+
+            <div class="row">
+                <!-- Konten berita -->
+                <?php
+                include "../webpbl-main/backend/koneksi.php";
+                $query = mysqli_query($koneksi, "SELECT * FROM berita");
+                while ($data = mysqli_fetch_array($query)) {
+                ?>
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="icon-box">
+                            <div class="img-berita">
+                                <img src="backend/foto/<?php echo $data['foto']; ?>" alt="">
+                            </div>
+                            <h4><a href="<?php echo $data['judul']; ?>"><?php echo $data['judul']; ?></a></h4>
+                            <p><?php echo substr($data['comment'], 0, 100); ?></p>
+                            <p><a href="<?php echo $data['link']; ?>">Baca Selengkapnya</a></p>
+                        </div>
+                    </div>
+                <?php
+                }
+                ?>
+            </div>
         </div>
+    </section><!-- End berita Section -->
 
-        <div class="news-item">
-            <img src="assets/img/berita2.jpeg" alt="Berita 2" class="news-image">
-            <h3>Judul Berita 2</h3>
-            <p></p>
-        </div>
-
-        <!-- Tambahkan lebih banyak berita jika diperlukan -->
-    </div>
+    <?php include_once './footer.php'; ?>
 </div>
+<!-- End Sidebar -->

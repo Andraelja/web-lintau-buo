@@ -30,6 +30,10 @@ include_once './navbar.php'
         .sidebar {
             width: 30%;
             margin-left: 20px;
+            background-color: white;
+            margin-top: 100px;
+            border: 1px solid #ebebeb;
+            padding: 10px 20px;
         }
 
         h1 {
@@ -179,7 +183,11 @@ include_once './navbar.php'
             <p></p>
         </div>
     </div>
-
+    <div class="footer">
+        <?php
+        include_once './pengumuman.php'
+            ?>
+    </div>
     <div class="footer">
         <?php
         include_once './footer.php'

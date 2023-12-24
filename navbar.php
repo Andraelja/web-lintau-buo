@@ -70,6 +70,7 @@
               <li><a href="suratketeranganusaha.php">Rekomendasi Surat Keterangan Usaha</a></li>
               <li><a href="pinjambank.php">Rekomendasi Wermeking Pinjam Bank</a></li>
               <li><a href="ahliwaris.php">Surat Keterangan Ahli Waris</a></li>
+              <li><a href="sktm.php">Surat Keterangan Tidak Mampu</a></li>
               <li><a href="suratkematian.php">Rekomendasi Surat kematian</a></li>
               <li><a href="skck.php">Surat Keterangan Catatan kepolisian</a></li>
               <li><a href="izinkeramaian.php">Surat Izin Keramaian</a></li>

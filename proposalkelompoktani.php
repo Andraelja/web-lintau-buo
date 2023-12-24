@@ -78,9 +78,10 @@ include_once './navbar.php'
         .sidebar {
             width: 30%;
             margin-left: 20px;
-            background-color: #f2f2f2;
-            padding: 20px;
+            background-color: white;
             margin-top: 100px;
+            border: 1px solid #ebebeb;
+            padding: 10px 20px;
         }
 
         .news-item {

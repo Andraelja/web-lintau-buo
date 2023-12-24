@@ -8,10 +8,10 @@ include_once './navbar.php'
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>surat keterangan ahli waris</title>
+    <title>E-KTP</title>
     <style>
         body {
-            background-color: white;
+            background-color: #f4f4f4;
             display: flex;
             justify-content: center;
             align-items: flex-start;
@@ -77,9 +77,10 @@ include_once './navbar.php'
         .sidebar {
             width: 30%;
             margin-left: 20px;
-            background-color: #f2f2f2;
-            padding: 20px;
+            background-color: white;
             margin-top: 100px;
+            border: 1px solid #ebebeb;
+            padding: 10px 20px;
         }
 
         .news-item {
@@ -112,18 +113,19 @@ include_once './navbar.php'
         }
 
         .icon-box {
-        text-align: center;
-        border: 1px solid #ebebeb;
-        padding: 80px 20px;
-        transition: all ease-in-out 0.3s;
-        background: #fff;
-        margin-bottom: 20px; /* Add margin to create space between cards */
-    }
+            text-align: center;
+            border: 1px solid #ebebeb;
+            padding: 80px 20px;
+            transition: all ease-in-out 0.3s;
+            background: #fff;
+            margin-bottom: 20px;
+            /* Add margin to create space between cards */
+        }
     </style>
 </head>
 
 <body>
-<div class="content">
+    <div class="content">
         <div class="title">
             <h1></h1>
         </div>

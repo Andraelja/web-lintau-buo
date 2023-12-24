@@ -223,7 +223,9 @@ h6 {
 
 .navbar a:hover,
 .navbar .active,
-.navbar .active:focus,
+.navbar .active:focus{
+  color: white;
+}
 .navbar li:hover>a {
   color: #ffc451;
 }

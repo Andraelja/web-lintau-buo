@@ -75,6 +75,7 @@
               <li><a href="pinjamanbank.php">Rekomendasi Wermeking Pinjam Bank</a></li>
               <li><a href="alashak.php">Alas Hak</a></li>
               <li><a href="ahliwaris.php">Surat Keterangan Ahli Waris</a></li>
+              <li><a href="sktm.php">Surat Keterangan Tidak Mampu</a></li>
               <li><a href="dispensasinikah.php">Rekomendasi Dispensasi Nikah</a></li>
               <li><a href="suratkematian.php">Rekomendasi Surat kematian</a></li>
             </ul>

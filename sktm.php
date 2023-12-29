@@ -11,8 +11,7 @@ include_once './navbar.php'
     <title>surat keterangan tidak / kurang mampu</title>
     <style>
         body {
-            background-image: url(assets/img/sktm.png);
-            background-size: cover;
+            background-color: #f4f4f4;
             display: flex;
             justify-content: center;
             align-items: flex-start;
@@ -82,7 +81,7 @@ include_once './navbar.php'
         .sidebar {
             width: 30%;
             margin-left: 20px;
-            background-color: #f2f2f2;
+            background-color: white;
             padding: 20px;
             margin-top: 100px;
         }

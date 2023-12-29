@@ -11,7 +11,7 @@ include_once './navbar.php'
     <title>Surat Pindah Penduduk</title>
     <style>
         body {
-            background-color: grey;
+            background-color: #f4f4f4;
             display: flex;
             justify-content: center;
             align-items: flex-start;

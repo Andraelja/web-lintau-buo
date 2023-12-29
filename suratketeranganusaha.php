@@ -11,8 +11,7 @@ include_once './navbar.php'
     <title>rekomendasi surat keterangan usaha</title>
     <style>
         body {
-            background-image: url(assets/img/keteranaganusaha.png);
-            background-size: cover;
+            background-color: #f4f4f4;
             display: flex;
             justify-content: center;
             align-items: flex-start;

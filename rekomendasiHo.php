@@ -11,7 +11,7 @@ include_once './navbar.php'
     <title>Rekomendasi HO</title>
     <style>
         body {
-            background-color: grey;
+            background-color: #f4f4f4;
             display: flex;
             justify-content: center;
             align-items: flex-start;

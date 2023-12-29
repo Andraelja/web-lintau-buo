@@ -1,78 +1,150 @@
-<?php include_once './navbar.php'; ?>
-<style>
-    .announcement{
-        margin-top: 90px;
-    }
-
-    .announcement .icon-box {
-        text-align: center;
-        border: 1px solid #ebebeb;
-        padding: 80px 20px;
-        transition: all ease-in-out 0.3s;
-        background: #fff;
-        margin-bottom: 20px; /* Add margin to create space between cards */
-    }
-
-    .announcement .icon-box .img-galeri {
-        position: relative;
-        overflow: hidden;
-        border-radius: 4px;
-        max-height: 200px; /* Adjust the maximum height as needed */
-    }
-
-    .announcement .icon-box img {
+<?php
+    include_once './navbar.php'
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .contact .info {
         width: 100%;
-        height: auto;
-        max-height: 100%;
-        object-fit: cover;
-        transition: transform 0.3s ease;
+        background: #fff;
     }
 
-    .announcement .icon-box p {
-        line-height: 24px;
-        font-size: 14px;
+    .contact .info i {
+        font-size: 20px;
+        background: #ffc451;
+        color: #151515;
+        float: left;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .contact .info h4 {
+        padding: 0 0 0 60px;
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: #151515;
+    }
+
+    .contact .info p {
+        padding: 0 0 0 60px;
         margin-bottom: 0;
-        margin-top: 10px;
+        font-size: 14px;
+        color: #484848;
     }
 
-    .announcement .icon-box:hover {
-        border-color: #fff;
-        box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
-        transform: translateY(-10px);
+    .contact .info .email,
+    .contact .info .phone {
+        margin-top: 40px;
+    }
+
+    .contact .php-email-form {
+        width: 100%;
+        background: #fff;
+    }
+
+    .contact .php-email-form .form-group {
+        padding-bottom: 8px;
+    }
+
+    .contact .php-email-form .error-message {
+        display: none;
+        color: #fff;
+        background: #ed3c0d;
+        text-align: left;
+        padding: 15px;
+        font-weight: 600;
+    }
+
+    .contact .php-email-form .error-message br+br {
+        margin-top: 25px;
+    }
+
+    .contact .php-email-form .sent-message {
+        display: none;
+        color: #fff;
+        background: #18d26e;
+        text-align: center;
+        padding: 15px;
+        font-weight: 600;
+    }
+
+    .contact .php-email-form .loading {
+        display: none;
+        background: #fff;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .contact .php-email-form .loading:before {
+        content: "";
+        display: inline-block;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        margin: 0 10px -6px 0;
+        border: 3px solid #18d26e;
+        border-top-color: #eee;
+        animation: animate-loading 1s linear infinite;
+    }
+
+    .contact .php-email-form input,
+    .contact .php-email-form textarea {
+        border-radius: 0;
+        box-shadow: none;
+        font-size: 14px;
+        border-radius: 4px;
+    }
+
+    .contact .php-email-form input:focus,
+    .contact .php-email-form textarea:focus {
+        border-color: #ffc451;
+    }
+
+    .contact .php-email-form input {
+        height: 44px;
+    }
+
+    .contact .php-email-form textarea {
+        padding: 10px 12px;
+    }
+
+    .contact .php-email-form button[type=submit] {
+        background: #ffc451;
+        border: 0;
+        padding: 10px 24px;
+        color: #151515;
+        transition: 0.4s;
+        border-radius: 4px;
+    }
+
+    .contact .php-email-form button[type=submit]:hover {
+        background: #ffcd6b;
+    }
+
+    @keyframes animate-loading {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
     }
 </style>
-<!-- ======= Berita Section ======= -->
-<section id="announcement" class="announcement">
-    <div class="container" data-aos="fade-up">
+</head>
+<body>
 
-        <div class="section-title">
-            <h2>Services</h2>
-            <p>Pengumuman Kecamatan</p>
-        </div>
-
-        <div class="row">
-            <?php
-            include "../webpbl-main/backend/koneksi.php";
-            $query = mysqli_query($koneksi, "SELECT * FROM pengumuman");
-            while ($data = mysqli_fetch_array($query)) {
-            ?>
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="icon-box">
-                        <div class="img-berita">
-                            <img src="backend/foto/<?php echo $data['foto']; ?>" alt="">
-                        </div>
-                        <h4><a href="<?php echo $data['link']; ?>"><?php echo $data['judul']; ?></a></h4>
-                        <p><?php echo substr($data['deskripsi'], 0, 100); ?></p>
-                        <p><a href="<?php echo $data['link']; ?>">Baca Selengkapnya</a></p>
-                    </div>
-                </div>
-            <?php
-            }
-            ?>
-        </div>
-    </div>
-</section><!-- End berita Section -->
-
+<!-- ======= Contact Section ======= -->
 <section id="contact" class="contact">
     <div class="container" data-aos="fade-up">
 
@@ -146,4 +218,15 @@
 
     </div>
 </section>
-<?php include_once './footer.php'; ?>
+<div class="footer">
+        <?php
+        include_once './berita.php'
+            ?>
+    </div>
+    <div class="footer">
+        <?php
+        include_once './footer.php'
+            ?>
+    </div>
+</body>
+</html>

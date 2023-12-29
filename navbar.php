@@ -45,7 +45,7 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto active" href="index.php">Home</a></li>
+          <li><a class="nav-link scrollto active" href="index.php">Beranda</a></li>
           <li class="dropdown"><a href="#about"><span>Profil</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="struktur.php">Struktur</a></li>
@@ -77,7 +77,7 @@
             </ul>
           </li>
           <li><a class="nav-link scrollto active" href="penduduk.php">Nagari</a></li>
-          <li><a class="nav-link scrollto" href="index.php">Contact</a></li>
+          <li><a class="nav-link scrollto" href="kontak.php">Kontak</a></li>
         </ul>
         </li>
         </ul>

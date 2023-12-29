@@ -11,8 +11,7 @@ include_once './navbar.php'
     <title>rekomendasi warmarketing pinjaman bank</title>
     <style>
         body {
-            background-image: url(assets/img/pinjamanbank.png);
-            background-size: cover;
+            background-color: #f4f4f4;
             display: flex;
             justify-content: center;
             align-items: flex-start;
